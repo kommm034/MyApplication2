@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.user.myapplication.MainActivity">
+    tools:context="com.example.user.myapplication.Index.MainActivity">
 
     <TextView
         android:id="@+id/textView2"
@@ -12,7 +12,6 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:contentDescription="@string/head_name"
         android:text="Hello BSRU"
         android:textColor="@android:color/background_dark"
         android:textColorLink="@android:color/background_dark"

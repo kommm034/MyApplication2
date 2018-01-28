@@ -9,15 +9,31 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".splash.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".BasicActivity" />
-        <activity android:name=".AdvanceActivity"></activity>
+        <activity
+            android:name=".basic.BasicActivity"
+            android:label="@string/basic">
+            <meta-data
+                android:name="android.support.FARENT_ACTIVITY"
+                android:value=".Index.MainActivity" />
+        </activity>
+        <activity
+            android:name=".advance.AdvanceActivity"
+            android:label="@string/advance">
+            <meta-data
+                android:name="android.support.FARENT_ACTIVITY"
+                android:value=".Index.MainActivity" />
+        </activity>
+        <activity android:name=".Index.MainActivity" />
+        <activity android:name=".gridview.GridviewActivity" />
+        <activity android:name=".listview.ListviewActivity" />
+        <activity android:name=".tabview.TabviewActivity"></activity>
     </application>
 
 </manifest>
