@@ -4,34 +4,36 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Advanceable;
 import android.widget.Button;
 
-public class MainActivity extends AppCompatActivity {
+public class BasicActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_basic);
 
-        Button advance = (Button) findViewById(R.id.advance);
-        Button basic = (Button) findViewById(R.id.basic);
+        Button basic1 = (Button) findViewById(R.id.basic1);
+        Button basic2 = (Button) findViewById(R.id.basic2);
 
-        basic.setOnClickListener(new View.OnClickListener() {
+        basic1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this,BasicActivity.class);
+                Intent intent = new Intent(BasicActivity.this,MainActivity.class);
                 startActivity(intent);
 
             }
         });
-        advance.setOnClickListener(new View.OnClickListener() {
+
+        basic2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this,AdvanceActivity.class);
+                Intent intent = new Intent(BasicActivity.this,MainActivity.class);
                 startActivity(intent);
 
             }
         });
+
+
     }
 }
